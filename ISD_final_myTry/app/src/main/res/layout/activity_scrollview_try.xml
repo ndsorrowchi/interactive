@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"      >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"  >
+
+     <HorizontalScrollView
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/scrollview"
+         android:fillViewport="false">
+
+       <LinearLayout
+        android:id="@+id/linear_in_scroll"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal" />
+
+     </HorizontalScrollView>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="30dp">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/goHome_scrol"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/rsz_house2"
+                android:scaleType="fitCenter"
+                android:background="#00000000"
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/goUSer_scrol"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rsz_figure"
+                android:background="#00000000"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/goHome_scrol"
+                />
+        </RelativeLayout>
+
+
+
+</LinearLayout>

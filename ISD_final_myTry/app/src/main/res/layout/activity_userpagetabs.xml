@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!--<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.2">
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:paddingTop="50dp">
+
+            <Button
+                android:id="@+id/Tab1Button"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:onClick="tabHandler"
+                android:background="@drawable/border_shape"
+                android:text="basic" />
+
+            <Button
+                android:id="@+id/Tab2Button"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:onClick="tabHandler"
+                android:background="@drawable/no_border_shape"
+                android:text="account" />
+
+            <Button
+                android:id="@+id/Tab3Button"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:onClick="tabHandler"
+                android:background="@drawable/no_border_shape"
+                android:text="statics" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.5">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rsz_house2"
+                    android:id="@+id/goHome_userpage"
+                    android:layout_alignTop="@+id/playwithoutlogin"
+                    android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tab_border_shape"
+            android:layout_weight="0.8"/>
+
+    </LinearLayout>
+
+
+
+</TabHost>

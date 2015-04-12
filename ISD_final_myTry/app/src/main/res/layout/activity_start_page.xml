@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startPage"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+
+
+    <TextView android:text="Java Guide"
+        android:id="@+id/java_guide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="60px"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_big"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/java_guide_text"/>
+
+
+
+    <TextView android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="50px"
+        android:textStyle="italic"
+        android:layout_below="@+id/java_guide_text"/>
+
+
+</RelativeLayout>

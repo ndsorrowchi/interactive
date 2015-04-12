@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sis.pitt.isd_final_mytry" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".startPage"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".userPageTabs"
+            android:label="@string/title_activity_try_tab"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".basic_tab1"
+            android:label="@string/title_activity_basic_tab1"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".account_tab2"
+            android:label="@string/title_activity_account_tab2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".statics_tab3"
+            android:label="@string/title_activity_statics_tab3"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".manu_lang"
+            android:label="manu_lang"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".loginPage"
+            android:label="@string/title_activity_login_page"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".sub_manu"
+            android:label="@string/title_activity_sub_manu"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".gamePage"
+            android:label="@string/title_activity_game_page"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".scrollview_try"
+            android:label="@string/title_activity_scrollview_try"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>
